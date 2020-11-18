@@ -1,0 +1,133 @@
+body {
+    max-width: 100%;
+    height: 1500px;
+    background: #f7dfdf;
+    padding-top: 100px;
+}
+
+main {
+    max-width: 940px;
+    margin: 0 auto;
+}
+.first {
+    font-family: 'Montserrat Bold';
+    color: #898f99;
+    font-size: 12px;
+}
+h1 {
+    text-align: center;
+    color: #27b4b6;
+}
+header {
+    margin-bottom: 80px;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'PT Sans Regular';
+}
+
+.description {
+    font-size: 18px;
+    color: #999999;
+    font-family: 'PT Sans Regular';
+}
+
+.container {
+    width: 850px;
+    margin: 0 auto;
+  
+}
+
+ul li:hover div{
+    color: white;
+}
+
+ul li:hover {
+    background: #0ec8cb;
+    opacity: 0.7;
+}
+
+ul li{
+    display: inline-block;
+    font-size: 15px;
+    box-sizing: border-box;
+    width: 22%;
+    height: 400px;
+    margin-top: -5px;
+    vertical-align: middle;
+
+}
+
+li {
+    margin-right: 20px;
+}
+ul {
+    font-size: 0px;
+    list-style: none;
+    margin-left: 50px;
+   
+}
+.logo {
+    height: 70px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+}
+.text, .text-2 {
+text-align: center;
+
+}
+
+.text {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.text-2 {
+    font-size: 15px;
+    color: #999999;
+    font-family: 'PT Sans Regular';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'PT Sans Regular';
+    src: url('PTSans-Regular.eot');
+    src: url('PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('PTSans-Regular.woff') format('woff'),
+    url('PTSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+        font-family: 'Montserrat Bold';
+        src: url('Montserrat-ExtraBold.eot');
+        src: url('Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-ExtraBold.woff') format('woff'),
+        url('Montserrat-ExtraBold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}

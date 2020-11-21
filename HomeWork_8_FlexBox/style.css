@@ -1,0 +1,61 @@
+body {
+    width: 100%;
+    background-image: url(images/stars.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+
+}
+.container {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;   
+}
+
+.box {
+    display: flex;
+    margin-top: 100px; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+
+.boxes {
+    flex-basis: 360px;
+    align-content: center;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.price {
+    padding-top: 30px;
+}
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.boxes div {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.italic {
+    font: italic;
+    font-size: 60px;
+    font-family: "miso";
+}
+
+.italic-small {
+    font: italic;
+    font-size: 30px;
+    font-family: "miso";
+}
+
+.box .boxes:hover {
+    height: 570px;
+}

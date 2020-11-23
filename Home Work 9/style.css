@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('ProximaNova-Regular.eot');
+    src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('ProximaNova-Regular.woff') format('woff'),
+    url('ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'FuturaPT-Heavy';
+        src:    url('https://nomail.com.ua/files/eot/5dfc35f20430696b7213dad364c9efba.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/5dfc35f20430696b7213dad364c9efba.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/5dfc35f20430696b7213dad364c9efba.woff2') format('woff2');
+    }
+@font-face {
+        font-family: 'Georgia Regular';
+        src: url('Georgia.eot');
+        src: url('Georgia.eot?#iefix') format('embedded-opentype'),
+        url('Georgia.woff') format('woff'),
+        url('Georgia.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+main {
+    width: 1800px;
+    margin-top: 50px;
+}
+.conteiner {
+    max-width: 1200px;
+    height: 830px;
+    margin: 0 auto;
+    background-color: #464f54;
+   
+}
+.text {
+    background-color: white;
+    height: 700px;
+    max-width: 1050px;
+    position: relative;
+    top: 130px;
+    left: 80px;
+    box-shadow: white;
+}
+
+.write {
+    background-color: black;
+    top: -95px;
+    left: 250px;
+    height: 180px;
+    z-index: 500;
+    padding-left: 55px;
+}
+
+.write, .box {
+position: absolute;
+
+}
+.box {
+    top: 10px;
+    left: 246px;
+}
+
+input {
+background-color: black;
+width: 805px;
+border: none;
+font-size: 48px;
+color: white;
+padding: 60px 10px 10px 0;
+position: relative;
+font-family: 'Playfair Display', serif;
+font-size: 48px;
+outline: none;
+border-bottom: 1px solid  #777777;
+}
+
+label {
+    color: #777777;
+    font-size: 15px;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    position: absolute;
+    top: 30px;
+    z-index: 5;
+}
+
+.description {
+    padding: 180px 115px 30px 50px;
+    border-left: 1px solid #b4b4b4;
+    margin-left: 60px;
+}
+
+/*оформление текста*/
+
+cite {
+    font-size: 19.84px;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #b4b4b4;
+}
+h2 {
+font-family:'FuturaPT-Heavy';
+font-size: 77.93px; 
+line-height: 73.72px;
+color: #2a2a2a;
+text-transform: uppercase;
+margin: 20px 0 0 0;
+}
+.quota {
+    font-size: 30px;
+    font-family: ;
+    color: #8f8f8f;
+    font-style: italic;
+}
+.georgia {
+    font-family: font-family: 'Georgia Regular';
+    font-size: 26.92px;
+    line-height: 40.38px;
+    color: black;
+
+}
+.italic {
+    font-family: font-family: 'Georgia Regular';
+    font-style: italic;
+}

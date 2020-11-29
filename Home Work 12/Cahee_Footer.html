@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cahee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="heder">
+                <div class="heder_name">Contact</div>
+                <div class="heder_text">
+                    <sapn>For new projects, ideas, business or anything<br>
+                        you'd like to discuss, contact with me!</sapn>
+                </div>
+            </div>
+            <form action="#" method="GET">
+                <div class="user-form">
+                    <div class="form">
+                        <div class="form__controls">
+                            <input type="text" name="Name" placeholder="Your name..." minlength="3" required>
+
+                        </div>
+                        <div class="form__controls">
+                            <input type="email" name="email" placeholder="Your email..." required>
+
+                        </div>
+                        <div class="form__controls">
+                            <input type="phone" name="phone" placeholder="Your phone number..." id="phone_us"
+                                maxlength="12" data-mask="(+000) 000-0000-00" data-mask-selectonfocus="true" />
+
+                        </div>
+                        <div class="form__controls">
+                            <textarea name="message">Your message...</textarea>
+                        </div>
+                        <select class="form__select">
+                            <option value="Street" selected disabled>Your Street</option>
+                            <option value="Shaftesbury Avenue">Shaftesbury Avenue</option>
+                            <option value="King’s Road">King’s Road</option>
+                            <option value="Abby Road">Abby Road</option>
+                        </select>
+                        <select class="form__select select-2">
+                            <option value="Building" selected disabled>Your Building</option>
+                            <option value="57">57</option>
+                            <option value="82">82</option>
+                            <option value="90">90</option>
+                            <option value="97">97</option>
+                            <option value="100">100</option>
+                        </select>
+                        <div class="form__controls">
+                            <button type="submit" class="form__controls--button">Submit</button>
+                        </div>
+                    </div>
+                    <div class="example">
+                        <div class="example__address">
+                            <span class="example__address--title">ADDRESS</span><br><span
+                                class="example__address--text">123 Cuty name. Street, City, Country</span>
+                        </div>
+                        <div class="example__email">
+                            <span class="example__email--title"> EMAIL</span><br>
+                            <span class="example__email--text">cahe@domain.com</span>
+                        </div>
+                        <div class="example__phone">
+                            <span class="example__phone--title"> PHONE</span><br>
+                            <span class="example__phone--text"> +012&#8194;345&#8194;6789</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="foter">
+                <div class="foter__copy">&#169;2015 Company. All right reserved.</div>
+                <div class="foter__logo"><img src="images/logo-small.png" alt=""></div>
+                <div class="foter__slogan">Made with <span class="red">love</span> by Auskteez</div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Jquery/jquery.mask.min.js"></script>
+    <!--<script>
+        $(document).ready(function () {
+            $('#phone_us').mask('(+000) 000-0000');
+        });
+    </script>-->
+
+</body>
+
+</html>

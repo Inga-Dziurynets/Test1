@@ -1,0 +1,168 @@
+.container {
+    max-width: 1500px;
+    height: 865px;
+    background-image: url(images/bg.jpg);
+    margin: 0 auto;
+}
+.heder {
+    text-align: center;
+    padding-top: 70px;
+}
+.heder_name{
+font-size: 90px;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+color: black;
+margin-bottom: 30px;
+}
+.heder_text {
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    flex: 2;
+    margin-top: 50px;
+}
+.form {
+    padding-right: 170px;
+}
+
+input {
+    outline: none;
+    padding-left: 20px;
+    border: none;
+    
+}
+.form__controls input {
+    font-size: 15px;
+    width: 480px;
+    height: 50px;  
+    background: #00c4c4;
+    opacity: 0.6;  
+    color: #ffffff;
+   
+}
+input::-webkit-input-placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 1;
+}
+.form__controls {
+    margin-bottom: 15px;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+}
+.form__select {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    height: 50px;
+    width: 247px;
+    background: #00c4c4;
+    opacity: 0.8;
+    padding-left: 20px;
+    margin: -5px 0 15px 4px;
+    outline-style: none;
+}
+
+.form__controls textarea {
+    width: 480px;
+    height: 200px;
+    background: #00c4c4;
+    opacity: 0.6;
+    border: none;
+}
+
+textarea {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px 0 0 20px;
+    color: white;
+}
+.form__controls--button {
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    width: 500px;
+    height: 50px;
+    background: #00c4c4;
+    color: white;
+    cursor: pointer;
+    border: none;
+    opacity: 0.6;
+}
+
+.form__controls textarea:focus, .form__controls textarea:active {
+    outline: none;
+}
+.form__controls input:focus, .form__controls input:active {
+    outline: none;
+}
+.form__controls {
+    position: relative;
+}
+.example__address--title, .example__email--title, .example__phone--title {
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+.example__address--text, .example__email--text, .example__phone--text {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: black;
+    
+}
+.example__address, .example__email {
+    margin-bottom: 15px;
+}
+.foter {
+    max-width: 1500px;
+    height: 90px;
+    background: #262626;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.foter__copy {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #b9b9b9;
+    margin-left: 165px;
+}
+
+.foter__slogan {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: #b9b9b9;
+    padding-right: 180px;
+}
+.red {
+    color: red;
+}
+
+.form__controls input:focus {
+    background: #00c4c4;
+    opacity: 0.8;
+    border-left: 4px solid #355b82;
+    margin-left: -4px;
+}
+textarea:focus {
+    background: #00c4c4;
+    opacity: 0.8;
+    border-left: 4px solid #355b82;
+    margin-left: -4px;
+}

@@ -1,0 +1,10 @@
+.separator {
+    &:before {
+        content: '';
+        height: 1px;
+        width: 100px;
+        border-top: 1px solid $secondcolor;
+        display: block;
+        margin: 0 auto;
+    }
+}

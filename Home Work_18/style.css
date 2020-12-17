@@ -1,0 +1,244 @@
+@font-face {
+	font-family: "Bebas Neue Light";
+	src: url("fonts/bebas-neue-light.eot"); /* IE9 Compat Modes */
+	src: url("fonts/bebas-neue-light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("fonts/bebas-neue-light.otf") format("opentype"), /* Open Type Font */
+		url("fonts/bebas-neue-light.svg") format("svg"), /* Legacy iOS */
+		url("fonts/bebas-neue-light.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("fonts/bebas-neue-light.woff") format("woff"), /* Modern Browsers */
+		url("fonts/bebas-neue-light.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    background-color: #9789f9;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 100px auto;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.tarif {
+    width: calc((100% - 370px) / 2);
+    margin: 20px;
+    text-align: center;
+    background-color: #f3f5f9;
+}
+
+@media screen and (max-width: 800px) {
+    .tarif {
+        margin: 30px;
+        width: 70%;
+       
+    }
+}
+
+.tarif__price {
+    font-family: 'Bebas Neue Light';
+    font-weight: 100;
+    padding-top: 40px;
+    font-size: calc( (100vw - 370px)/(1300 - 370) * (60 - 40) + 40px);
+}
+.tarif__name {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    font-size: calc( (100vw - 340px)/(1300 - 340) * (24 - 15) + 15px);
+}
+
+.tarif__pop {
+    width: 37%;
+   margin: -40px 0;
+   position: relative;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .tarif {
+        margin: 30px;
+        width: 70%;
+       
+    }
+}
+
+.tarif__pop::before {
+    content: 'P';
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fd8d7b;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.tarif__pop::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fd8d7b;
+    position: absolute;
+    top: 10px;
+    right: 13px;
+}
+.tarif__tooltip {
+    position: relative;
+    display: inline-block;
+
+}
+.tarif__tooltip .tooltext {
+    color: white;
+    font-size: 15px;
+    font-family: 'Bebas Neue Light';
+    letter-spacing: 2px;
+    font-weight: 300;
+    width: 100px;
+    height: 25px;
+    padding-top: 5px;
+    border-radius: 50px 50px;
+    background: #3b4040;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: -280px;
+
+}
+.tarif__tooltip .tooltext::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 99%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #3b4040 transparent transparent;
+}
+.tarif__tooltip:hover .tooltext {
+    visibility: visible;
+    opacity: 1;
+}
+.tarif__tooltip .tooltext {
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+.tarif__pop:hover .tooltext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.name__pop {
+padding-bottom: 40px;
+}
+
+.name__pop::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fd8d7b;
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    
+}
+.icon-pop {
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+.tarif__text {
+    display: inline-block;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #a9a9a9;
+    position: absolute;
+    top: 40px;
+    right: 25%;
+}
+
+.tarif__box {
+    background: #ffffff;
+    min-height: 225px;
+    padding-top: 50px;
+    border-radius: 250em 250em 0 0;
+    padding-bottom: 30px;
+}
+
+.tarif__price::before {
+    content: "$";
+    font-size: 16px;
+    vertical-align: super;
+
+}
+.tarif__price::after {
+    content: "/HR";
+    font-size: 16px;
+    vertical-align: sub;
+}
+.tarif__price .baks {
+font-size: 16px;
+
+}
+.tarif__price .hr {
+    font-size: 16px;
+}
+
+.tarif__benefits {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.tarif__benefit {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 53px;  
+    color: black;
+}
+
+.tarif__button {
+    outline: none;
+    background: #6fcffb;
+    border-radius: 25px;
+    padding: 15px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    transform: translateY(20px);
+    cursor: pointer;
+
+}
+.button-pop {
+    background: #fd8d7b;
+    -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+            transform: translateY(-30px);
+    cursor: pointer;
+    
+}
+.footer-pop {
+    height: 90px;
+    position: relative;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Far Cry 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <main class="game">
+        <div class="game__wrapper">
+            <div class="game__tabs">
+                <div class="tab">
+                    <i class="fa fa-comment-alt fa-2x"></i>
+                    <p class="tab-title">INFORMATION</p>
+                </div>
+                <div class="tab">
+                    <i class="fa fa-heart fa-2x"></i>
+                    <p class="tab-title"> RATINGS INFO</p>
+                </div>
+                <div class="tab">
+                    <i class="fa fa-shopping-bag fa-2x"></i>
+                    <p class="tab-title"> WHERE TO BUY</p>
+                </div>
+            </div>
+            <div class="game__tab_content">
+                <div class="tab_item first">
+                    <div class="item-cover">
+                        <img src="images/item_1.png" alt="">
+                        <ul class="tab-star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star last"></i></li>
+                        </ul>
+                    </div>
+                    <div class="item-content">
+                        <h2 class="item-name"> FarCry 4</h2>
+                        <span class="item-realease">First Released Nov 17, 2014</span>
+                        <div class="item-src">
+                            <p class="rank">7.8</p>
+                        </div>
+
+                        <p class="item-desc">
+                            In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of
+                            the Hima
+                            layas struggling under the regime of a despotic self-appointed king.
+                        </p>
+                        <span class="item-disc">20&#37;OFF!</span>
+                        <span class="item-price">&#36;59.96</span>
+                        <button class="item-btn" type="submit">BUY IT NOW</button>
+                    </div>
+                </div>
+                <div class="tab_item second">
+                    <div class="item-cover">
+                        <img src="images/item_1.png" alt="">
+                        <ul class="tab-star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star last"></i></li>
+                        </ul>
+                    </div>
+                    <div class="item-content">
+                        <p class="rating-content">In Far Cry, you are always a stranger. Every game in the series has
+                            placed players into the
+                            boots of a protagonist who is a foreigner in the wild and untamed land they find themselves
+                            in.</p>
+                        <p class="rating-content"> The conceit helps ground participants in both the story and the
+                            action; when everything is
+                            as
+                            new to the player as it is to the character they control, they’re essentially on the same
+                            learning curve.</p>
+                    </div>
+                </div>
+                <div class="tab_item third">
+                    <div class="item-cover">
+                        <img src="images/item_1.png" alt="">
+                        <ul class="tab-star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star last"></i></li>
+                        </ul>
+                    </div>
+                    <div class="third-content">
+                        <p class="content">Discover the most diverse Far Cry world ever created. With terrain spanning
+                            from lush forests to the snowcapped Himalayas, the entire world is alive…and deadly.
+                            - From leopards, rhinos, black eagles, and vicious honey badgers, Kyrat is home to abundant
+                            wildlife. As you embark on your hunt for resources, know that something may be hunting
+                            you...</p>
+                        <p class="content"> - Scout enemy territory from above in the all-new gyrocopter and then
+                            plummet back to earth
+                            in your wing suit. Climb aboard the back of a six-ton elephant and unleash its raw power on
+                            your enemies. </p>
+                        <p class="content"> - Choose the right weapon for the job, no matter how insane or unpredictable
+                            that job might
+                            be. With a diverse arsenal, you’ll be prepared for anything. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+
+        $(".tab_item").not(":first").hide();
+        $(".game__wrapper .tab").click(function () {
+            $(".game__wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+            $(".tab_item").hide().eq($(this).index()).fadeIn(1);
+        }).eq(0).addClass("active");
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+.wraper {
+    max-width: 1920px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+.text {
+    max-width: 900px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+.slogan {
+    font-size: 18px;
+    font-weight: 600;
+    color: #303030;
+    
+}
+.title {
+    font-size: 56px;
+    font-weight: 400;
+    color: #000000;
+    position: relative;
+    margin: 0 0 100px 0;
+    line-height: 60px;
+    font-weight: 600;
+   
+}
+
+    @media screen and (max-width: 992px) {
+        .title {font-size: calc( (100vw - 360px)/(1110 - 360) * (40 - 25) + 25px);}
+        
+      }
+
+.title::before {
+    content: url('images/tre.png');
+    position: absolute;
+    left: 50px;
+    top: 120px;
+    
+}
+
+
+.title::after {
+    content: url('images/plus.png');
+    position: absolute;
+    top: -90px;
+    right: 200px;
+}
+
+@media screen and (max-width: 720px) {
+    .title::before{visibility: hidden;}
+    .title::after{visibility: hidden;}
+}
+
+.slider__title {
+    font-size: 28px; 
+    color: #ffffff;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.slider__text {
+    font-size: 12px;  
+    font-weight: 600;
+    color: #ffffff;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    text-transform: uppercase;
+}
+
+.slide_second {
+    position: absolute;
+    top: 0px;
+    visibility: hidden;
+}
+
+.first:hover .slide_second{
+    visibility: visible;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    opacity: 0.9;
+}
+
+.second:hover .slide_second{
+    visibility: visible;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    opacity: 0.9;
+}
+.third:hover .slide_second{
+    visibility: visible;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    opacity: 0.9;
+}
+.fourth:hover .slide_second{
+    visibility: visible;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    opacity: 0.9;
+}
+
+.slider {
+    position: relative;
+    padding-bottom: 50px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.slick-track {
+    display: flex;
+}
+.slick-slide {
+    padding-right: 40px;    
+}
+.slick-slide img {
+    max-width: 100%;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-prev, .slick-next {
+    width: 70px;
+    height: 70px;
+}
+
+@media screen and (max-width: 720px) {
+    .slick-prev, .slick-next {visibility: hidden};
+    .slider{padding: 0}
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    font-size: 0;
+}
+.slider .slick-prev {
+   left: -80px !important;
+}
+.slider .slick-next {
+  right: 30px !important;
+}
+
+@media screen and (max-width: 1450px) {
+    .slider .slick-prev {left: 30px !important;}
+}
+
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.slider .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.slick-dots .slick-active button {
+    background-color: white;
+    border: 1px solid black;
+}

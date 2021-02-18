@@ -1,0 +1,14 @@
+input {
+    height: 25px;
+    width: 200px;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+#search {
+    height: 30px;
+    width: 206px;
+    font-size: 20px;
+    border: 1px solid grey;
+    cursor: pointer;
+}

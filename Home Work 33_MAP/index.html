@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Build a route</h1>
+    <form class="search_form">
+        <input type="text" name="start" id="start" placeholder="Enter start a location"><br>
+        <input type="text" name="finish" id="finish" placeholder="Enter end a location"><br>
+        <button type="button" id="search">Get a route</button>
+    </form>
+    <div id="map" style="width: 100%; height: 600px;"></div>
+
+
+    <script>
+
+        let geocoder;
+        let map;
+        let start = document.getElementById('start');
+        let end = document.getElementById('finish');
+
+        let address = start.value;
+
+        function initMap() {
+
+            let nikolaev = { lat: 46.967039410084155, lng: 32.0020230675544 };
+
+            let directionsService = new google.maps.DirectionsService();
+            let directionsRenderer = new google.maps.DirectionsRenderer();
+
+            let map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: nikolaev
+            });
+
+            const marker = new google.maps.Marker({
+                position: nikolaev,
+                map: map,
+            });
+
+            directionsRenderer.setMap(map);
+            geocoder = new google.maps.Geocoder();
+            codeAddress(geocoder, map, address);
+
+
+            const onChangeHandler = function () {
+                calcRoute(directionsService, directionsRenderer);
+            };
+
+            let button = document.getElementById("search")
+
+            button.addEventListener("click", function () {
+                onChangeHandler()
+            })
+        };
+
+        function calcRoute(directionsService, directionsRenderer) {
+            directionsService.route(
+                {
+                    origin: {
+                        query: start.value,
+                    },
+                    destination: {
+                        query: finish.value,
+                    },
+                    travelMode: google.maps.TravelMode.WALKING,
+                },
+                (response, status) => {
+                    if (status === "OK") {
+                        directionsRenderer.setDirections(response);
+                    } else {
+                        console.log("Directions request failed due to " + status);
+                    }
+                }
+            );
+
+        }
+        function codeAddress(geocoder, map, address) {
+            geocoder.geocode({ 'address': address }, function (results, status) {
+                if (status === 'OK') {
+                    map.setCenter(results[0].geometry.location);
+                    let marker = new google.maps.Marker({
+                        map: map,
+                        position: results[0].geometry.location
+                    });
+                } else {
+                    console.log('Geocode was not successful for the following reason: ' + status);
+                }
+            });
+        }
+    </script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41ycSScYSW1Ed5iclqlmGjCSY_TAtrjU&callback=initMap&libraries=&v=weekly"
+        async defer>
+        </script>
+</body>
+
+</html>
